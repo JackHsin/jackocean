@@ -13,13 +13,13 @@ export const HeaderOptionsList = ({setContactShow}) => {
                 <Link href="/"><a>Home</a></Link>
             </OptionLink>          
             <OptionLink to='/about'>
-            <Link href="/test"><a>About</a></Link>
+                <Link href="/test"><a>About</a></Link>
             </OptionLink>
             <OptionLink to='/services'>
                 Service
             </OptionLink>
             <OptionLink to="#" onClick={() => setContactShow(true)}>
-                Contact
+                <Link href="/contact"><a>Contact</a></Link>
             </OptionLink>
 
             {/* Sign In/Out Switch
