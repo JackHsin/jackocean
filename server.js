@@ -11,7 +11,8 @@ const handle = app.getRequestHandler()
 // Contact Email Service
 const router = express.Router();
 const nodemailer = require('nodemailer');
-
+if(process.env.NODE_EVN !== 'production') require('dotenv').config();
+const SMTP_APP_PASSWORD = process.env.SMTP_APP_PASSWORD;
 
 
 app.prepare().then(() => {
@@ -30,7 +31,6 @@ app.prepare().then(() => {
 
 
   // Contact Service
-    const SMTP_APP_PASSWORD = process.env.SMTP_APP_PASSWORD;
     var transport = {
         service: 'gmail',
         auth: {
