@@ -1,12 +1,11 @@
 import styled, { css } from 'styled-components';
-import { Link } from 'next/link';
 
 const OptionContainerStyles = css`
     padding: 10px 15px;
     cursor: pointer;
 `;
 
-export const OptionLink = styled.a`
+export const OptionLink = styled.span`
     ${OptionContainerStyles}
     
     :-webkit-any-link {

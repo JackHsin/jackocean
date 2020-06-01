@@ -19,30 +19,63 @@ const ContactPage = ({ setContactShow }) => {
         message: ''
     };
     const [ contactInfo, setContactData ] = useState(initialContactState);
-
     const { name, email, phoneNumber, category, message } = contactInfo;
+
+    const [status, setStatus] = useState({
+        submitted: false,
+        submitting: false,
+        info: { error: false, msg: null }
+    })
+
+    const handleResponse = (status, msg) => {
+        if (status === 200) {
+          setStatus({
+            submitted: true,
+            submitting: false,
+            info: { error: false, msg: msg }
+            
+          })
+          setContactData(initialContactState);
+        } else {
+          setStatus({
+            info: { error: true, msg: msg }
+          })
+        }
+    }
 
     const handleSubmit = async event => {
         event.preventDefault();
-
-        axios({
-            method: "post", 
-            url:"send", 
-            data: {
-                name: name,   
-                email: email,
-                phoneNumber: phoneNumber,
-                category: category,
-                message: message
-            }
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert('success'); 
-            } else if(response.data.status === 'fail') {
-                alert('fail');
-            }
-            setContactData(initialContactState);
+        setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
+        
+        const res = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(contactInfo)
         })
+        const text = await res.text()
+        console.log(text)
+        handleResponse(res.status, text)
+
+        // axios({
+        //     method: "post", 
+        //     url:"send", 
+        //     data: {
+        //         name: name,   
+        //         email: email,
+        //         phoneNumber: phoneNumber,
+        //         category: category,
+        //         message: message
+        //     }
+        // }).then((response) => {
+        //     if (response.data.status === 'success') {
+        //         alert('success'); 
+        //     } else if(response.data.status === 'fail') {
+        //         alert('fail');
+        //     }
+        //     setContactData(initialContactState);
+        // })
     }
 
     const handleChange = event => {
@@ -99,7 +132,15 @@ const ContactPage = ({ setContactShow }) => {
                         required
                     />
 
-                    <CustomButton type='submit' style={{ backgroundColor:"LightBlue", width:'100%' }}>Submit</CustomButton>
+                    <CustomButton type='submit' disabled={status.submitting} style={{ backgroundColor:"LightBlue", width:'100%' }}>
+                        {
+                            !status.submitting
+                                ? !status.submitted
+                                    ? 'Submit'
+                                    : 'Submitted'
+                                : 'Submitting...'
+                        }
+                    </CustomButton>
                 </form>
                 
                 
