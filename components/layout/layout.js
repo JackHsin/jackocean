@@ -6,10 +6,10 @@ import Link from 'next/link'
 import Header from '../header/header'
 import Footer from '../footer/footer'
 
-export default function Layout({ children }) {
+export default function Layout({ children, locale, setLocale}) {
   return (
     <>
-      <Header />
+      <Header locale={locale} setLocale={setLocale}/>
         {children}
       <Footer />
     </>

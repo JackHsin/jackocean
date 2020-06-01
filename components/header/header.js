@@ -10,7 +10,7 @@ import {
     MenuDropdownContainer, MenuDropdownItemsContainer
 } from './header.styles';
 
-export const Header = ({ hidden=true }) => {
+export const Header = ({ hidden=true, locale, setLocale }) => {
     const [ contactShow, setContactShow ] = useState(false);
     
     return (
@@ -20,7 +20,7 @@ export const Header = ({ hidden=true }) => {
             </LogoContainer>
 
             <OptionsContainer>
-                {/* Chinese/English Switch
+                {/* Chinese/English Switch */}
                 {
                     locale.includes('zh') ?
                         (
@@ -34,7 +34,7 @@ export const Header = ({ hidden=true }) => {
                                 中文
                             </OptionDiv>
                         )
-                } */}
+                }
                 <DesktopMenuContainer>
                     <HeaderOptionsList setContactShow={setContactShow} />
                 </DesktopMenuContainer>

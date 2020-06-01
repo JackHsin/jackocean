@@ -8,8 +8,6 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import React, { useState } from 'react';
 
-import { getSortedPostsData } from '../lib/posts'
-
 import Directory from '../components/directory/directory.component';
 
 import { HomePageContainer, CoverPhotoContainer, CoverPhoto } from '../styles/index.styles'
@@ -66,13 +64,4 @@ export default function Home({ allPostsData }) {
         <Directory />
     </HomePageContainer>
   )
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
 }
