@@ -27,7 +27,6 @@ export default function App({ Component, pageProps }) {
   return (
     <IntlProvider locale={locale} key={locale} defaultLocale="zh" messages={messages}>
       <Layout locale={locale} setLocale={setLocale}>
-        <FormattedMessage id="site.fullname"/>
         <Component {...pageProps} locale={locale} setLocale={setLocale}/>
       </Layout>
     </IntlProvider>
