@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans Condensed', "微軟正黑體", sans-serif ;
+  /* font-family: 'Open Sans Condensed', "微軟正黑體", sans-serif; */
 }
 
 a {
@@ -9,4 +9,5 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans Condensed', "微軟正黑體", sans-serif;
 }
