@@ -12,7 +12,7 @@ export const DirectoryMenuContainer = styled.div`
     // position: relative;
 
     @media screen and (max-width: 800px) {
-        flex-direction: unset;
+        flex-direction: row;
     }
 
 `;

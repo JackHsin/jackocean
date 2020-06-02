@@ -23,11 +23,15 @@ export const MenuItemContainer = styled.div`
         }
     }
 
-
-
     @media screen and (max-width: 800px) {
         flex: 1 1 auto;
-        height: 200px;
+        height: 150px;
+        width: 48%;
+        margin: 5px 0;
+
+        &:first-child {
+            margin-right: 5px;
+        }
     }
 `;
 MenuItemContainer.displayName = 'MenuItemContainer';

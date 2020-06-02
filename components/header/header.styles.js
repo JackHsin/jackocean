@@ -20,13 +20,14 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled.a`
     height: 100%;
-    width: 20px;
-    padding: 5px 25px;
+    width: auto;
+    padding: 0 0 0 25px;
     display: flex;
-    flex: 1;
+
+    cursor: pointer;
 
     @media screen and (max-width: 800px) {
-        width: 50px;
+        width: 100%;
         padding 0px;
     }
 `;
