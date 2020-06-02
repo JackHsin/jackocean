@@ -1,6 +1,3 @@
-import React from 'react';
-
-// import './menu-item.styles.scss';
 import { MenuItemContainer, BackgroundImageContainer, ContentContainer } from './menu-item.styles';
 
 import { FormattedMessage } from 'react-intl';
