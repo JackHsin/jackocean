@@ -5,7 +5,7 @@ import { CartIconContainer, ShoppingIconContainer } from './cart-icon.styles';
 
 export const CartIcon = ( { toggleMenuShow } ) => (
     <CartIconContainer onClick={ () => toggleMenuShow()} >
-        <ShoppingIconContainer src="icons8-menu_black.svg" alt="TaiwanNiu Logo"  id="cartIcon" />
+        <ShoppingIconContainer src="/icons8-menu_black.svg" alt="TaiwanNiu Logo"  id="cartIcon" />
     </CartIconContainer>
 );
 

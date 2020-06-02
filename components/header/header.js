@@ -19,7 +19,7 @@ export const Header = ({ locale, setLocale, menuShow, toggleMenuShow }) => {
     
             <Link href="/">
                 <LogoContainer>
-                    <img src="FulongTaiwanNiu.svg" alt="TaiwanNiu Logo" />
+                    <img src="/FulongTaiwanNiu.svg" alt="TaiwanNiu Logo" />
                 </LogoContainer>
             </Link>
 

@@ -33,7 +33,7 @@ const AboutPage = ( { intl: { formatMessage }} ) => {
             </AboutTitleContainer>
             <AboutContentContainer>
                 <AboutImageContainer>
-                    <img src="images/TaiwanNiu-FB-Big-Logo-noBG.png" />
+                    <img src="/images/TaiwanNiu-FB-Big-Logo-noBG.png" />
                 </AboutImageContainer>
                 
                 <AboutIntroContainer>
