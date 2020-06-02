@@ -4,7 +4,8 @@ export const HomePageContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    height: auto;
 
     @media screen and (max-width: 800px) {
         flex-direction: column;
@@ -16,7 +17,7 @@ export const CoverPhotoContainer = styled.div`
     flex: 3;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     padding: 7.5px;
     justify-content: center;
 `

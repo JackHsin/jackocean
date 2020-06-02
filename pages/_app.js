@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import '../styles/global.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Layout from '../components/layout/layout';
 
+// import Layout from '../components/layout/layout';
+import Header from '../components/header/header'
+import Footer from '../components/footer/footer'
+
+import { PageContainer, ComponentWrap } from '../styles/_app.styles';
 
 import enLocaleData from 'react-intl/locale-data/en.js';
 import zhLocaleData from 'react-intl/locale-data/zh.js';
 import en from '../locales/en';
 import zh from '../locales/zh';
 import { IntlProvider, addLocaleData, FormattedMessage, injectIntl, formatMessage } from 'react-intl';
-
-
 
 addLocaleData([...enLocaleData, ...zhLocaleData])
 
@@ -28,17 +30,21 @@ export default function App({ Component, pageProps }) {
     }
 
     return (
-        <div onClick={(event) => {
-            if(event.target.id === "cartIcon") return;
+        <IntlProvider locale={locale} key={locale} defaultLocale="zh" messages={messages}>
+            <PageContainer onClick={(event) => {
+                if(event.target.id === "cartIcon") return;
 
-            if (menuShow)
-            return toggleMenuShow()
-        }}>
-            <IntlProvider locale={locale} key={locale} defaultLocale="zh" messages={messages}>
-                <Layout locale={locale} setLocale={setLocale} menuShow={menuShow} toggleMenuShow={toggleMenuShow}>
-                    <Component {...pageProps} locale={locale} setLocale={setLocale}/>
-                </Layout>
-            </IntlProvider>
-        </div>
+                if (menuShow)
+                return toggleMenuShow()
+            }}>
+                
+                <Header locale={locale} setLocale={setLocale} menuShow={menuShow} toggleMenuShow={toggleMenuShow}/>
+                    <ComponentWrap>
+                        <Component {...pageProps} locale={locale} setLocale={setLocale}/>
+                    </ComponentWrap>
+                <Footer />
+                
+            </PageContainer>
+        </IntlProvider>
     )
 }

@@ -7,6 +7,9 @@ export const DirectoryMenuContainer = styled.div`
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
+    padding: 0px 7.5px;
+    height: 80vh;
+    // position: relative;
 
     @media screen and (max-width: 800px) {
         flex-direction: unset;

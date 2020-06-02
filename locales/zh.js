@@ -3,11 +3,9 @@ const zh_TW = {
     'app.learn': '學習 {name}',
     'site.fullname': '福隆台灣牛',
 
-    'homepage.title': '福隆台灣牛 - 單車 自行車 腳踏車 電動腳踏車 民宿 衝浪 海灘 玩水',
-    'homepage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租，包層民宿，衝浪板出租、教學，浮潛獨木舟',
-
-    'aboutpage.title': '福隆台灣牛 - 關於',
-    'aboutpage.des': '福隆台灣牛 - 介紹',
+    'about.title': '福隆台灣牛',
+    'about.subtitle': '',
+    'about.openinghours': '營業時間：早上7點到下午6點',
     
 
     'menu.home': '首頁',
@@ -35,5 +33,12 @@ const zh_TW = {
     'contact.submit': '送出',
     'contact.submitted': '送出成功',
     'contact.submitting': '傳送中...',
+
+    // Head Meta Data
+    'homepage.title': '福隆台灣牛 - 單車 自行車 腳踏車 電動腳踏車 民宿 衝浪 海灘 玩水',
+    'homepage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租，包層民宿，衝浪板出租、教學，浮潛獨木舟',
+
+    'aboutpage.title': '福隆台灣牛 - 關於',
+    'aboutpage.des': '福隆台灣牛 - 介紹',
 };
 export default zh_TW;

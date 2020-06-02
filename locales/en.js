@@ -3,12 +3,10 @@ const en = {
     'app.learn': 'Learn {name}',
     'site.fullname': 'Fulong Taiwan Niu',
 
-    'homepage.title': 'Fulong Taiwan Niu - Bike, Bicycle, Electric Bicycle, Hostel, Surfing, Beach',
-    'homepage.des': 'Fulong Taiwan Niu - All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling',
 
-    'aboutpage.title': 'Fulong Taiwan Niu - About',
-    'aboutpage.des': 'Fulong Taiwan Niu - Introduction',
-    
+    'about.title': 'Fulong TaiwanNiu',
+    'about.subtitle': '',
+    'about.openinghours': 'Opening Hours: 7am - 6pm',
 
     'menu.home': 'HOME',
     'menu.about': 'ABOUT',
@@ -35,6 +33,13 @@ const en = {
     'contact.submit': 'Submit',
     'contact.submitted': 'Submitted',
     'contact.submitting': 'Submitting...',
+
+    //Head Meta Data
+    'homepage.title': 'Fulong Taiwan Niu - Bike, Bicycle, Electric Bicycle, Hostel, Surfing, Beach',
+    'homepage.des': 'Fulong Taiwan Niu - All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling',
+
+    'aboutpage.title': 'Fulong Taiwan Niu - About',
+    'aboutpage.des': 'Fulong Taiwan Niu - Introduction',
 
 
 };

@@ -12,11 +12,11 @@ export const HeaderOptionsList = ({setContactShow}) => {
             <OptionLink>
                 <Link href="/"><a><FormattedMessage id="menu.home"/></a></Link>
             </OptionLink>          
-            <OptionLink to='/about'>
-                <Link href="/test"><a><FormattedMessage id="menu.about"/></a></Link>
+            <OptionLink>
+                <Link href="/about"><a><FormattedMessage id="menu.about"/></a></Link>
             </OptionLink>
-            <OptionLink to='/services'>
-                <Link href="/test"><a><FormattedMessage id="menu.services"/></a></Link>
+            <OptionLink>
+                <Link href="/services"><a><FormattedMessage id="menu.services"/></a></Link>
             </OptionLink>
             <OptionLink to="#" onClick={() => setContactShow(true)}>
                 <FormattedMessage id="menu.contact"/>

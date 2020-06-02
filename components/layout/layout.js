@@ -8,10 +8,10 @@ import Footer from '../footer/footer'
 
 export default function Layout({ children, locale, setLocale, menuShow, toggleMenuShow }) {
   return (
-    <>
+    <div>
       <Header locale={locale} setLocale={setLocale} menuShow={menuShow} toggleMenuShow={toggleMenuShow}/>
         {children}
       <Footer />
-    </>
+    </div>
   )
 }
