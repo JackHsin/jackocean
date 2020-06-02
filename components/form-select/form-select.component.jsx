@@ -2,16 +2,16 @@ import React from 'react';
 
 import { GroupContainer, FormSelectContainer, FormSelectOption } from './form-select.styles';
 
-// import { injectIntl } from "react-intl";
+import { injectIntl } from "react-intl";
 
-const FormSelect = ({ handleChange, list, ...props }) => (
+const FormSelect = ({ handleChange, list, intl: { formatMessage }, ...props }) => (
    
     <GroupContainer>
         <FormSelectContainer onChange={handleChange} {...props} >
         {
             list.map(item => (
                 <FormSelectOption key={item} vlaue={item}>
-                    {item}
+                    {formatMessage({ id: `contact.select.${item}` })}
                 </FormSelectOption>
             ))
         }
@@ -19,4 +19,4 @@ const FormSelect = ({ handleChange, list, ...props }) => (
     </GroupContainer>
 )
 
-export default FormSelect;
+export default injectIntl(FormSelect);

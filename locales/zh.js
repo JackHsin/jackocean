@@ -33,7 +33,7 @@ const zh_TW = {
     'contact.select.others': '其它',
     'contact.message': '訊息內容',
     'contact.submit': '送出',
-    'contact.submit.success': '訊息寄送成功',
-    'contact.submit.fail': '訊息寄送失敗',
+    'contact.submitted': '送出成功',
+    'contact.submitting': '傳送中...',
 };
 export default zh_TW;

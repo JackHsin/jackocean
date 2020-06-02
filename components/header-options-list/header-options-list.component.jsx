@@ -9,7 +9,7 @@ export const HeaderOptionsList = ({setContactShow}) => {
     return (
         // React.Fragment, to return mulitple elements from a component or function
         <>
-            <OptionLink to='/'>
+            <OptionLink>
                 <Link href="/"><a><FormattedMessage id="menu.home"/></a></Link>
             </OptionLink>          
             <OptionLink to='/about'>
@@ -19,7 +19,7 @@ export const HeaderOptionsList = ({setContactShow}) => {
                 <Link href="/test"><a><FormattedMessage id="menu.services"/></a></Link>
             </OptionLink>
             <OptionLink to="#" onClick={() => setContactShow(true)}>
-                <Link href="/contact"><a><FormattedMessage id="menu.contact"/></a></Link>
+                <FormattedMessage id="menu.contact"/>
             </OptionLink>
 
             {/* Sign In/Out Switch

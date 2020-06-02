@@ -33,8 +33,8 @@ const en = {
     'contact.select.others': 'Others',
     'contact.message': 'Message',
     'contact.submit': 'Submit',
-    'contact.submit.success': 'Message Sent.',
-    'contact.submit.fail': 'Message failed to send.',
+    'contact.submitted': 'Submitted',
+    'contact.submitting': 'Submitting...',
 
 
 };

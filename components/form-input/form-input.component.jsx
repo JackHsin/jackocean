@@ -3,7 +3,7 @@ import React from 'react';
 // import './form-input.styles.scss';
 import { GroupContainer, FormInputContainer, FormInputLabel } from './form-input.styles';
 
-// import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 const FormInput = ({ handleChange, label, ...props }) => (
     <GroupContainer>
@@ -17,7 +17,7 @@ const FormInput = ({ handleChange, label, ...props }) => (
                     :
                     null
                 }
-                {props.name}
+                <FormattedMessage id={`contact.${props.name}`}/>
             </FormInputLabel>)
             : null
         }

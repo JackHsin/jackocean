@@ -2,7 +2,7 @@ import React from 'react';
 
 import { GroupContainer, FormTextareaContainer, FormTextareLabel } from './form-textarea.styles';
 
-// import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 const FormTextarea = ({ handleChange, label, ...props }) => (
     <GroupContainer>
@@ -16,7 +16,7 @@ const FormTextarea = ({ handleChange, label, ...props }) => (
                     :
                     null
                 }
-                {props.name}
+                <FormattedMessage id={`contact.${props.name}`}/>
             </FormTextareLabel>)
             : null
         }

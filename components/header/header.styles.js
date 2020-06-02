@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Link } from 'next/link';
 
 const OptionContainerStyles = css`
     padding: 10px 15px;

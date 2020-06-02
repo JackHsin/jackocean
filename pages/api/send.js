@@ -8,7 +8,7 @@ export default async function(req, res) {
   const content = {
     to: 'qk14000@gmail.com',
     from: email,
-    subject: `T台灣牛, New Contact Message about ${category}`,
+    subject: `台灣牛, New Contact Message about ${category}`,
     text: `name: ${name} \ncategory: ${category} \nphoneNumber: ${phoneNumber} \nemail: ${email} \nmessage: ${message}`,
     html: `name: ${name}<br>category: ${category}<br>phoneNumber: ${phoneNumber}<br>email: ${email}<br>message: ${message}`
   }

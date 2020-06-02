@@ -15,20 +15,30 @@ import { IntlProvider, addLocaleData, FormattedMessage, injectIntl, formatMessag
 addLocaleData([...enLocaleData, ...zhLocaleData])
 
 export default function App({ Component, pageProps }) {
-  const [locale, setLocale] = useState("zh-TW");
+    const [locale, setLocale] = useState("zh-TW");
 
-  let messages;
-  if (locale.includes('zh')) {
-      messages = zh;
-  } else {
-      messages = en;
-  }
+    const [ menuShow, setMenuShow ] = useState(false);
+    const toggleMenuShow = () => setMenuShow(!menuShow);
 
-  return (
-    <IntlProvider locale={locale} key={locale} defaultLocale="zh" messages={messages}>
-      <Layout locale={locale} setLocale={setLocale}>
-        <Component {...pageProps} locale={locale} setLocale={setLocale}/>
-      </Layout>
-    </IntlProvider>
-  )
+    let messages;
+    if (locale.includes('zh')) {
+        messages = zh;
+    } else {
+        messages = en;
+    }
+
+    return (
+        <div onClick={(event) => {
+            if(event.target.id === "cartIcon") return;
+
+            if (menuShow)
+            return toggleMenuShow()
+        }}>
+            <IntlProvider locale={locale} key={locale} defaultLocale="zh" messages={messages}>
+                <Layout locale={locale} setLocale={setLocale} menuShow={menuShow} toggleMenuShow={toggleMenuShow}>
+                    <Component {...pageProps} locale={locale} setLocale={setLocale}/>
+                </Layout>
+            </IntlProvider>
+        </div>
+    )
 }

@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
-// import { ReactComponent as Logo } from '../../public/FulongTaiwanNiu.svg';
-// import CartIcon from '../../components/cart-icon/cart-icon.component';
+import Link from 'next/link';
 
-// import ContactPage from '../contact/contact.component';
 import HeaderOptionsList from '../header-options-list/header-options-list.component';
+import Contact from '../contact/contact.component';
+import CartIcon from '../cart-icon/cart-icon.component';
 
 import {
     HeaderContainer, LogoContainer, DesktopMenuContainer, MobileMenuContainer, OptionsContainer, OptionDiv,
     MenuDropdownContainer, MenuDropdownItemsContainer
 } from './header.styles';
 
-export const Header = ({ hidden=true, locale, setLocale }) => {
+export const Header = ({ locale, setLocale, menuShow, toggleMenuShow }) => {
     const [ contactShow, setContactShow ] = useState(false);
+    
     
     return (
         <HeaderContainer>
-            <LogoContainer to ="/">
-                <img src="FulongTaiwanNiu.svg" alt="TaiwanNiu Logo" />
-            </LogoContainer>
+    
+            <Link href="/">
+                <LogoContainer>
+                    <img src="FulongTaiwanNiu.svg" alt="TaiwanNiu Logo" />
+                </LogoContainer>
+            </Link>
 
             <OptionsContainer>
                 {/* Chinese/English Switch */}
@@ -38,29 +42,29 @@ export const Header = ({ hidden=true, locale, setLocale }) => {
                 <DesktopMenuContainer>
                     <HeaderOptionsList setContactShow={setContactShow} />
                 </DesktopMenuContainer>
-{/* 
+
                 <MobileMenuContainer>
-                    <CartIcon />
+                    <CartIcon toggleMenuShow={toggleMenuShow}/>
                     {
-                        hidden ?
-                            null
+                        menuShow ?
+                            <MenuDropdownContainer>
+                                <MenuDropdownItemsContainer>
+                                    <HeaderOptionsList setContactShow={setContactShow}/>
+                                </MenuDropdownItemsContainer>
+                            </MenuDropdownContainer>
                         :
-                        <MenuDropdownContainer>
-                            <MenuDropdownItemsContainer>
-                                <HeaderOptionsList setContactShow={setContactShow}/>
-                            </MenuDropdownItemsContainer>
-                        </MenuDropdownContainer>
+                            null
                     }
-                </MobileMenuContainer> */}
+                </MobileMenuContainer>
             </OptionsContainer>
-            {/* {
+            {
                 contactShow ?
                     (
-                        <ContactPage setContactShow={setContactShow}/>
+                        <Contact setContactShow={setContactShow}/>
                     )
                 :
                     null
-            } */}
+            }
         </HeaderContainer>
     )
 };
