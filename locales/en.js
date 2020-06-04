@@ -39,11 +39,21 @@ const en = {
     'contact.submitting': 'Submitting...',
 
     //Head Meta Data
-    'homepage.title': 'Fulong Taiwan Niu - Bike, Bicycle, Electric Bicycle, Hostel, Surfing, Beach',
-    'homepage.des': 'Fulong Taiwan Niu - All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling',
+    'homepage.title': 'Fulong Taiwan Niu - Bike, Bicycle | Electric Bicycle | Hostel | Surfingboard Rental | Surfing Lesson | SUP | Beach',
+    'homepage.des': 'Fulong Taiwan Niu - All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
 
     'aboutpage.title': 'Fulong Taiwan Niu - About',
     'aboutpage.des': 'Fulong Taiwan Niu - Introduction',
+
+    'servicespage.title': 'Fulong Taiwan Niu - Services',
+    'servicespage.des': 'All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
+
+    //Image Alt
+    'image.coverphoto.taiwanniuStore': 'Fulong Taiwan Niu Store',
+    'image.coverphoto.surfingTyphoonWave': 'Surfing Typhoon Wave',
+    'image.coverphoto.longmenSuspensionBridge': 'Longmen Suspension Bridge',
+    'image.coverphoto.birdsEyeViewOfFulongBeach': 'Bird\'s eye view of Fulong Beach',
+
 
 
 };

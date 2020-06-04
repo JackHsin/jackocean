@@ -39,10 +39,22 @@ const zh_TW = {
     'contact.submitting': '傳送中...',
 
     // Head Meta Data
-    'homepage.title': '福隆台灣牛 - 單車 自行車 腳踏車 電動腳踏車 民宿 衝浪 海灘 玩水',
-    'homepage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租，包層民宿，衝浪板出租、教學，浮潛獨木舟',
+    'homepage.title': '福隆台灣牛 - 單車 | 自行車 | 腳踏車 | 電動腳踏車 | 民宿 | 衝浪板出租 | 衝浪板教學 | SUP | 海灘玩水',
+    'homepage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
 
     'aboutpage.title': '福隆台灣牛 - 關於',
     'aboutpage.des': '福隆台灣牛 - 介紹',
+
+    'servicespage.title': '福隆台灣牛 - 服務項目',
+    'servicespage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
+
+    //Image Alt
+    'image.coverphoto.taiwanniuStore': '福隆台灣牛店面',
+    'image.coverphoto.surfingTyphoonWave': '衝颱風浪',
+    'image.coverphoto.longmenSuspensionBridge': '龍門吊橋',
+    'image.coverphoto.birdsEyeViewOfFulongBeach': '鳥瞰福隆海灘',
+
+
+
 };
 export default zh_TW;

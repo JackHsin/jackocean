@@ -21,7 +21,6 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
     const router = useRouter().pathname.split('/');
     const pageName = router[router.length-1];
     const pathLang = router[1].includes('en') ? 'en/' : '';
-    console.log(useRouter().pathname);
     
     return (
         <HeaderContainer>

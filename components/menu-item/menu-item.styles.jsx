@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MenuItemContainer = styled.div`
+export const MenuItemContainer = styled.a`
     height: 30%;
     min-width: 30%;
     display: flex;

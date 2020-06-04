@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useRouter } from 'next/router'
+import { Helmet } from "react-helmet";
 
 // import './aboutPage.styles.scss';
 import { AboutPageContainer, AboutTitleContainer, AboutContentContainer, AboutImageContainer, AboutIntroContainer } from './aboutPage.styles'
@@ -12,7 +13,7 @@ import { injectIntl, formatMessage, FormattedMessage } from 'react-intl';
 
 import { LocaleContext } from '../../../context/localeProvider';
 
-const AboutPage = ( { intl: { formatMessage }} ) => {
+const AboutPage = ( { intl: { formatMessage } } ) => {
     // const [ introContent, setIntroContent ] = useState("")
 
     const { locale, setLocale } = useContext(LocaleContext);
@@ -28,10 +29,11 @@ const AboutPage = ( { intl: { formatMessage }} ) => {
 
     return (
         <AboutPageContainer>
-            {/* <Helmet>
+            <Helmet>
                 <title>{formatMessage({ id: `aboutpage.title` })}</title>
                 <meta name="description" content={formatMessage({ id: `aboutpage.des` })} />
-            </Helmet> */}
+            </Helmet>
+
             <AboutTitleContainer>
                 <h1><FormattedMessage id="about.title"/></h1>
                 <h3><FormattedMessage id="about.openinghours"/></h3>
