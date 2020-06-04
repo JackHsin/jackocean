@@ -15,9 +15,9 @@ export const HeaderOptionsList = ({setContactShow}) => {
             <OptionLink>
                 <Link href="/about"><a><FormattedMessage id="menu.about"/></a></Link>
             </OptionLink>
-            <OptionLink>
+            {/* <OptionLink>
                 <Link href="/services"><a><FormattedMessage id="menu.services"/></a></Link>
-            </OptionLink>
+            </OptionLink> */}
             <OptionLink to="#" onClick={() => setContactShow(true)}>
                 <FormattedMessage id="menu.contact"/>
             </OptionLink>
