@@ -1,7 +1,6 @@
-import { useState, useContext } from 'react';
-import Head from 'next/head'
-import styles from './layout.module.css'
-import Link from 'next/link'
+import { useState, useContext, useEffect } from 'react';
+
+import { initGA, logPageView } from "../../googleAnalytics.js"
 
 import Header from '../header/header'
 import Footer from '../footer/footer'
@@ -30,6 +29,14 @@ export default function Layout({ children, menuShow, toggleMenuShow }) {
   } else {
       messages = en;
   }
+
+  useEffect(() => {        
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  }, []);
 
   return (
       <IntlProvider locale={locale} key={locale} defaultLocale="zh" messages={messages}>
