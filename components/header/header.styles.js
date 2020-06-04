@@ -27,7 +27,7 @@ export const LogoContainer = styled.a`
     cursor: pointer;
 
     @media screen and (max-width: 800px) {
-        width: 100%;
+        width: auto;
         padding 0px;
     }
 `;
@@ -55,6 +55,7 @@ export const OptionDiv = styled.div`
     border: 1px solid black;
     padding: 0px 15px;
     cursor: pointer;
+    width: auto;
 `;
 
 export const DesktopMenuContainer = styled.div`

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Link from 'next/link';
 
 import HeaderOptionsList from '../header-options-list/header-options-list.component';
@@ -10,9 +10,12 @@ import {
     MenuDropdownContainer, MenuDropdownItemsContainer
 } from './header.styles';
 
-export const Header = ({ locale, setLocale, menuShow, toggleMenuShow }) => {
+import { LocaleContext } from '../../context/localeProvider';
+
+export const Header = ({ menuShow, toggleMenuShow }) => {
     const [ contactShow, setContactShow ] = useState(false);
     
+    const { locale, setLocale } = useContext(LocaleContext);
     
     return (
         <HeaderContainer>
@@ -34,7 +37,7 @@ export const Header = ({ locale, setLocale, menuShow, toggleMenuShow }) => {
                         )
                     :
                         (
-                            <OptionDiv onClick={() => setLocale('zh-Hant')}>
+                            <OptionDiv onClick={() => setLocale('zh')}>
                                 中文
                             </OptionDiv>
                         )

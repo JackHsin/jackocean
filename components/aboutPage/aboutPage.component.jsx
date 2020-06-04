@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 // import './aboutPage.styles.scss';
@@ -9,8 +9,12 @@ import { AboutPageContainer, AboutTitleContainer, AboutContentContainer, AboutIm
 
 import { injectIntl, formatMessage, FormattedMessage } from 'react-intl';
 
+import { LocaleContext } from '../../context/localeProvider';
+
 const AboutPage = ( { intl: { formatMessage }} ) => {
     const [ introContent, setIntroContent ] = useState("")
+
+    const { locale, setLocale } = useContext(LocaleContext);
 
     // useEffect(() => {
     //     fetch(introMD)
@@ -26,7 +30,6 @@ const AboutPage = ( { intl: { formatMessage }} ) => {
                 <title>{formatMessage({ id: `aboutpage.title` })}</title>
                 <meta name="description" content={formatMessage({ id: `aboutpage.des` })} />
             </Helmet> */}
-
             <AboutTitleContainer>
                 <h1><FormattedMessage id="about.title"/></h1>
                 <h3><FormattedMessage id="about.openinghours"/></h3>
