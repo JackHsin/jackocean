@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { useRouter } from 'next/router'
 
 // import './aboutPage.styles.scss';
 import { AboutPageContainer, AboutTitleContainer, AboutContentContainer, AboutImageContainer, AboutIntroContainer } from './aboutPage.styles'
@@ -9,20 +10,21 @@ import { AboutPageContainer, AboutTitleContainer, AboutContentContainer, AboutIm
 
 import { injectIntl, formatMessage, FormattedMessage } from 'react-intl';
 
-import { LocaleContext } from '../../context/localeProvider';
+import { LocaleContext } from '../../../context/localeProvider';
 
 const AboutPage = ( { intl: { formatMessage }} ) => {
-    const [ introContent, setIntroContent ] = useState("")
+    // const [ introContent, setIntroContent ] = useState("")
 
     const { locale, setLocale } = useContext(LocaleContext);
+    
+    const pathLang = useRouter().pathname.split('/')[1];
 
-    // useEffect(() => {
-    //     fetch(introMD)
-    //         .then((res) => res.text())
-    //             .then((md) => {
-    //                 setIntroContent(md)
-    //             })
-    // }, []);
+    useEffect(() => {        
+        if(pathLang.includes('en'))
+            setLocale('en');
+        else
+            setLocale('zh');
+    }, []);
 
     return (
         <AboutPageContainer>

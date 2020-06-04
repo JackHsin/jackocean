@@ -19,13 +19,14 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
     const { locale, setLocale } = useContext(LocaleContext);
 
     const router = useRouter().pathname.split('/');
-    const pathname = router[router.length-1];
-    console.log(pathname);
+    const pageName = router[router.length-1];
+    const pathLang = router[1].includes('en') ? 'en/' : '';
+    console.log(useRouter().pathname);
     
     return (
         <HeaderContainer>
     
-            <Link href="/">
+            <Link href={`/${pathLang}`}>
                 <LogoContainer>
                     <img src="/FulongTaiwanNiu.svg" alt="TaiwanNiu Logo" />
                 </LogoContainer>
@@ -36,7 +37,7 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
                 {
                     locale.includes('zh') ?
                         (
-                            <Link href={`/en/${pathname}`}>
+                            <Link href={`/en/${pageName}`}>
                                 <OptionLink onClick={() => setLocale('en')}>
                                     English
                                 </OptionLink>
@@ -44,7 +45,7 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
                         )
                     :
                         (
-                            <Link href={`/${pathname}`}>
+                            <Link href={`/${pageName}`}>
                                 <OptionLink onClick={() => setLocale('zh')}>
                                     中文
                                 </OptionLink>

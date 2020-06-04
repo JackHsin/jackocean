@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-import AboutPage from '../../components/aboutPage/aboutPage.component'
+import AboutPage from '../../components/pages/aboutPage/aboutPage.component'
 
 function About() {
-
     return (
         <AboutPage />
     )

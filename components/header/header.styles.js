@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const OptionContainerStyles = css`
-    padding: 10px 15px;
+    padding: 0px 15px;
     cursor: pointer;
 `;
 
@@ -43,7 +43,7 @@ export const OptionsContainer = styled.div`
 
 export const OptionLink = styled.a`
     ${OptionContainerStyles}
-    
+    border: 1px solid black;
     :-webkit-any-link {
         text-decoration: none;
         color: black;

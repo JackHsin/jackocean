@@ -19,6 +19,10 @@ const en = {
     'homepage.hostel': 'Hostel',
     'homepage.activity': 'Activity',
 
+    'services.bike': 'Bike',
+    'services.hostel': 'Hostel',
+    'services.activity': 'Activity',
+
     'contact.title': 'Contact Form',
     'contact.subtitle': 'Send Us What You Want To Ask',
     'contact.name': 'Name',

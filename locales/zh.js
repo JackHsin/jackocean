@@ -19,6 +19,10 @@ const zh_TW = {
     'homepage.hostel': '住宿',
     'homepage.activity': '水上活動',
 
+    'services.bike': '單車',
+    'services.hostel': '住宿',
+    'services.activity': '水上活動',
+
     'contact.title': '聯絡我們',
     'contact.subtitle': '有任何需求或疑問請儘管聯絡我們',
     'contact.name': '姓名',

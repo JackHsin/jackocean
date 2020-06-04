@@ -1,4 +1,5 @@
-import ServicesPage from '../components/pages/servicesPage/servicesPage.component'
+import ServicesPage from '../../components/pages/servicesPage/servicesPage.component'
+
 
 function Services( ) {
     return (
