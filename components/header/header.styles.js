@@ -41,7 +41,7 @@ export const OptionsContainer = styled.div`
     justify-content: flex-end;
 `;
 
-export const OptionLink = styled.span`
+export const OptionLink = styled.a`
     ${OptionContainerStyles}
     
     :-webkit-any-link {

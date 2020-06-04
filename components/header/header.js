@@ -1,4 +1,5 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
+import { useRouter } from 'next/router'
 import Link from 'next/link';
 
 import HeaderOptionsList from '../header-options-list/header-options-list.component';
@@ -6,7 +7,7 @@ import Contact from '../contact/contact.component';
 import CartIcon from '../cart-icon/cart-icon.component';
 
 import {
-    HeaderContainer, LogoContainer, DesktopMenuContainer, MobileMenuContainer, OptionsContainer, OptionDiv,
+    HeaderContainer, LogoContainer, DesktopMenuContainer, MobileMenuContainer, OptionsContainer, OptionDiv, OptionLink,
     MenuDropdownContainer, MenuDropdownItemsContainer
 } from './header.styles';
 
@@ -16,6 +17,10 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
     const [ contactShow, setContactShow ] = useState(false);
     
     const { locale, setLocale } = useContext(LocaleContext);
+
+    const router = useRouter().pathname.split('/');
+    const pathname = router[router.length-1];
+    console.log(pathname);
     
     return (
         <HeaderContainer>
@@ -31,15 +36,19 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
                 {
                     locale.includes('zh') ?
                         (
-                            <OptionDiv onClick={() => setLocale('en')}>
-                                English
-                            </OptionDiv>
+                            <Link href={`/en/${pathname}`}>
+                                <OptionLink onClick={() => setLocale('en')}>
+                                    English
+                                </OptionLink>
+                            </Link>
                         )
                     :
                         (
-                            <OptionDiv onClick={() => setLocale('zh')}>
-                                中文
-                            </OptionDiv>
+                            <Link href={`/${pathname}`}>
+                                <OptionLink onClick={() => setLocale('zh')}>
+                                    中文
+                                </OptionLink>
+                            </Link>
                         )
                 }
                 <DesktopMenuContainer>
