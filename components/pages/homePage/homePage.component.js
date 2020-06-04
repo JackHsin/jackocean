@@ -27,6 +27,7 @@ function HomePage( { intl: { formatMessage } } ) {
   return (
       <HomePageContainer>
           <Helmet>
+                <meta name="google-site-verification" content="EePNiz9uww5d8uZsrGWGNNhNiwlwCemxIXkAozjQuyE" />
               <title>{formatMessage({ id: `homepage.title` })}</title>
               <meta name="description" content={formatMessage({ id: `homepage.des` })} />
           </Helmet>
