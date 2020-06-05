@@ -31,6 +31,10 @@ function HomePage( { intl: { formatMessage } } ) {
               <title>{formatMessage({ id: `homepage.title` })}</title>
               <meta name="description" content={formatMessage({ id: `homepage.des` })} />
           </Helmet>
+          <div>
+            <CoverPhoto src="/images/homepage_Intro_BG_1280x365.jpg" />
+    
+          </div>
           
           <CoverPhotoContainer>
               <Carousel>

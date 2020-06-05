@@ -13,6 +13,22 @@ export const HomePageContainer = styled.div`
     }
 `;
 
+// export const CoverBannerContainer = styled.div`
+// `
+
+export const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    height: auto;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        padding: 0;
+    }
+`
+
 export const CoverPhotoContainer = styled.div`
     display: flex;
     flex: 3;
