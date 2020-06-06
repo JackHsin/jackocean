@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const HomePageContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 0px;
     height: auto;
 
     @media screen and (max-width: 800px) {
@@ -13,15 +13,41 @@ export const HomePageContainer = styled.div`
     }
 `;
 
-// export const CoverBannerContainer = styled.div`
-// `
+export const CoverBannerContainer = styled.div`
+    width: 100%;
+    height: 250px;
+    // justify-items: center;
+    // vertical-align: middle;
+    align-items: center;
+    display: grid;
+    text-align: center;
+
+    h1 {
+        padding: 100px;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        height: 200px;
+
+        h1 {
+            font-size: 25px;
+            padding: unset;
+        }
+    }
+`
+
+export const CoverBannerText = styled.h1`
+    color: white;
+`
 
 export const ContentContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 0px;
     height: auto;
+    width: 100%;
 
     @media screen and (max-width: 800px) {
         flex-direction: column;

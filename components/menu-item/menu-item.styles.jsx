@@ -6,7 +6,7 @@ export const MenuItemContainer = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    // border: 1px solid black;
     overflow: hidden;
     // position: absolute;
 

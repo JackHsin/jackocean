@@ -15,6 +15,7 @@ const en = {
     'menu.signin': 'SIGN IN',
     'menu.signout': 'SIGN OUT',
 
+    'homepage.bannerText': 'Fulong TaiwanNiu - Provide Comprehensive Travel Services in Fulong',
     'homepage.bike': 'Bike',
     'homepage.hostel': 'Hostel',
     'homepage.activity': 'Activity',

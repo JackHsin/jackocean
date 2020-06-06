@@ -15,6 +15,7 @@ const zh_TW = {
     'menu.signin': '登入',
     'menu.signout': '登出',
 
+    'homepage.bannerText': '福隆台灣牛 - 提供全方位福隆旅遊服務',
     'homepage.bike': '單車',
     'homepage.hostel': '住宿',
     'homepage.activity': '水上活動',
