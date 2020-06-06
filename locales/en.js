@@ -7,6 +7,7 @@ const en = {
     'about.title': 'Fulong TaiwanNiu',
     'about.subtitle': '',
     'about.openinghours': 'Opening Hours: 7am - 6pm',
+    'aboutpage.introduction': 'TaiwanNiu Owner is a big wave surfer who has been surfing in Taiwan for over 30 years and is one of the very few in Taiwan.',
 
     'menu.home': 'HOME',
     'menu.about': 'ABOUT',
@@ -21,8 +22,11 @@ const en = {
     'homepage.activity': 'Activity',
 
     'services.bike': 'Bike',
+    'services.bikeText': 'Bike',
     'services.hostel': 'Hostel',
+    'services.hostelText': 'Hostel',
     'services.activity': 'Activity',
+    'services.activityText': 'Activity',
 
     'contact.title': 'Contact Form',
     'contact.subtitle': 'Send Us What You Want To Ask',

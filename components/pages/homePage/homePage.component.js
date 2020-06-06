@@ -32,7 +32,7 @@ function HomePage( { intl: { formatMessage } } ) {
               <title>{formatMessage({ id: `homepage.title` })}</title>
               <meta name="description" content={formatMessage({ id: `homepage.des` })} />
           </Helmet>
-          <CoverBannerContainer style={{ backgroundImage: "url(/images/homepage_Intro_BG_1280x365.jpg)" }}>
+          <CoverBannerContainer imageUrl="/images/homepage_Intro_BG_1280x365.jpg" >
             <CoverBannerText>{formatMessage({ id: `homepage.bannerText` })}</CoverBannerText>
           </CoverBannerContainer>
 

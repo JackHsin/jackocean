@@ -21,6 +21,9 @@ export const CoverBannerContainer = styled.div`
     align-items: center;
     display: grid;
     text-align: center;
+    background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     h1 {
         padding: 100px;

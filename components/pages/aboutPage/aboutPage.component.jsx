@@ -45,7 +45,7 @@ const AboutPage = ( { intl: { formatMessage } } ) => {
                 
                 <AboutIntroContainer>
                     {/* <ReactMarkdown source={introContent} /> */}
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sint provident error inventore libero tempora quo temporibus architecto nobis quod, et autem officiis eos atque blanditiis vero earum, commodi repellat.
+                    {formatMessage({ id: `aboutpage.introduction` })}
                 </AboutIntroContainer>
             </AboutContentContainer>
         </AboutPageContainer>

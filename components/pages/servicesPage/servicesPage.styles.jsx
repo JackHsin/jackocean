@@ -55,6 +55,6 @@ export const ImageContainer = styled.img`
 
 export const TitleContainer = styled.h2`
     font-size: 38px;
-    margin: 0 auto 30px;
+    margin: 0 auto 10px;
     color: ${({ color }) => `${color}`};
 `;

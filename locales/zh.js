@@ -6,7 +6,7 @@ const zh_TW = {
     'about.title': '福隆台灣牛',
     'about.subtitle': '',
     'about.openinghours': '營業時間：早上7點到下午6點',
-    
+    'aboutpage.introduction': '台灣牛老闆是一位在台灣衝浪超過三十年且在台灣寥寥無幾的大浪浪人，自家經營單車租借、民宿、衝浪相關服務。物美價廉，服務周到。',
 
     'menu.home': '首頁',
     'menu.about': '關於',
@@ -21,8 +21,11 @@ const zh_TW = {
     'homepage.activity': '水上活動',
 
     'services.bike': '單車',
+    'services.bikeText': '單車',
     'services.hostel': '住宿',
+    'services.hostelText': '住宿',
     'services.activity': '水上活動',
+    'services.activityText': '衝浪板出租: 500元/天，衝浪教學: 1200元/2小時',
 
     'contact.title': '聯絡我們',
     'contact.subtitle': '有任何需求或疑問請儘管聯絡我們',
