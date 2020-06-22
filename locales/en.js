@@ -13,6 +13,7 @@ const en = {
     'menu.about': 'ABOUT',
     'menu.services': 'SERVICES',
     'menu.contact': 'CONTACT',
+    'menu.location': 'LOCATION',
     'menu.signin': 'SIGN IN',
     'menu.signout': 'SIGN OUT',
 

@@ -12,6 +12,7 @@ const zh_TW = {
     'menu.about': '關於',
     'menu.services': '服務',
     'menu.contact': '聯絡',
+    'menu.location': '位置',
     'menu.signin': '登入',
     'menu.signout': '登出',
 
