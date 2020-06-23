@@ -29,6 +29,17 @@ const en = {
     'services.activity': 'Activity',
     'services.activityText': 'Activity',
 
+    'location.1': '',
+    'location.2': '',
+    'location.3': '',
+    'location.4': '',
+    'location.5': '',
+    'location.6': '',
+    'location.7': '',
+    'location.8': '',
+    'location.9': '',
+    'location.10': '',
+
     'contact.title': 'Contact Form',
     'contact.subtitle': 'Send Us What You Want To Ask',
     'contact.name': 'Name',
@@ -53,6 +64,9 @@ const en = {
 
     'servicespage.title': 'Fulong Taiwan Niu - Services',
     'servicespage.des': 'All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
+    
+    'locationpage.title': 'Fulong Taiwan Niu - Bike Rental Hostel Locations',
+    'locationpage.des': 'All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
 
     //Image Alt
     'image.coverphoto.taiwanniuStore': 'Fulong Taiwan Niu Store',

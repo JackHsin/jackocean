@@ -28,6 +28,20 @@ const zh_TW = {
     'services.activity': '水上活動',
     'services.activityText': '衝浪板出租: 500元/天，衝浪教學: 1200元/2小時',
 
+    'location.map.title': '地圖',
+    'location.navigation.title': '街景導航',
+    'location.1': '十字路口右前方有兩個交通錐的就是台灣牛單車出租店面',
+    'location.2': '十字路口右轉後繼續往前走約莫60公尺後會看到橋',
+    'location.3': '過橋後的路口右轉',
+    'location.4': '右轉後繼續走一小段',
+    'location.5': '右手邊會有下樓階梯',
+    'location.6': '下樓梯，對面建築二樓就是民宿',
+    'location.7': '下樓後右轉進去',
+    'location.8': '前方水管可以沖洗沙子',
+    'location.9': '左手邊樓梯上到二樓',
+    'location.10': '抵達民宿大門',
+
+
     'contact.title': '聯絡我們',
     'contact.subtitle': '有任何需求或疑問請儘管聯絡我們',
     'contact.name': '姓名',
@@ -52,6 +66,9 @@ const zh_TW = {
 
     'servicespage.title': '福隆台灣牛 - 服務項目',
     'servicespage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
+
+    'locationpage.title': '福隆台灣牛 - 單車出租 民宿 位置',
+    'locationpage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
 
     //Image Alt
     'image.coverphoto.taiwanniuStore': '福隆台灣牛店面',
