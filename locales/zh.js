@@ -22,24 +22,25 @@ const zh_TW = {
     'homepage.activity': '水上活動',
 
     'services.bike': '單車',
-    'services.bikeText': '單車',
+    'services.bikeText': '提供各式捷安特腳踏車、電動車、公路車出租，住宿租車另有優惠!',
     'services.hostel': '住宿',
-    'services.hostelText': '住宿',
+    'services.hostelText': '請上Airbnb參觀訂房:',
+    'services.airbnb.name': '福隆台灣牛 Airbnb',
     'services.activity': '水上活動',
-    'services.activityText': '衝浪板出租: 500元/天，衝浪教學: 1200元/2小時',
+    'services.activityText': '衝浪板出租: 500元/天，衝浪教學: 1200元/2小時，住宿客人另有優惠!',
 
     'location.map.title': '地圖',
     'location.navigation.title': '街景導航',
-    'location.1': '十字路口右前方有兩個交通錐的就是台灣牛單車出租店面',
+    'location.1': ' 火車站前十字路口右前方有兩個交通錐的就是台灣牛單車出租店面',
     'location.2': '十字路口右轉後繼續往前走約莫60公尺後會看到橋',
-    'location.3': '過橋後的路口右轉',
-    'location.4': '右轉後繼續走一小段',
+    'location.3': '過橋後的路口左轉',
+    'location.4': '左轉後繼續走一小段',
     'location.5': '右手邊會有下樓階梯',
     'location.6': '下樓梯，對面建築二樓就是民宿',
     'location.7': '下樓後右轉進去',
-    'location.8': '前方水管可以沖洗沙子',
+    'location.8': '前方水龍頭和水管可以沖洗沙子',
     'location.9': '左手邊樓梯上到二樓',
-    'location.10': '抵達民宿大門',
+    'location.10': '歡迎到達民宿',
 
 
     'contact.title': '聯絡我們',
@@ -58,17 +59,17 @@ const zh_TW = {
     'contact.submitting': '傳送中...',
 
     // Head Meta Data
-    'homepage.title': '福隆台灣牛 - 單車 | 自行車 | 腳踏車 | 電動腳踏車 | 民宿 | 衝浪板出租 | 衝浪板教學 | SUP | 海灘玩水',
-    'homepage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
+    'homepage.title': '福隆台灣牛 - 捷安特 單車 | 自行車 | 腳踏車 | 電動腳踏車 | 民宿 | 衝浪板出租 | 衝浪板教學 | SUP | 海灘玩水',
+    'homepage.des': '福隆玩樂，各式捷安特腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
 
     'aboutpage.title': '福隆台灣牛 - 關於',
     'aboutpage.des': '福隆台灣牛 - 介紹',
 
     'servicespage.title': '福隆台灣牛 - 服務項目',
-    'servicespage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
+    'servicespage.des': '福隆玩樂，各式捷安特腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
 
     'locationpage.title': '福隆台灣牛 - 單車出租 民宿 位置',
-    'locationpage.des': '福隆玩樂，各式腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
+    'locationpage.des': '福隆玩樂，各式捷安特腳踏車、電動車、公路車出租、包層民宿、衝浪板出租、衝浪教學、浮潛獨木舟、SUP',
 
     //Image Alt
     'image.coverphoto.taiwanniuStore': '福隆台灣牛店面',

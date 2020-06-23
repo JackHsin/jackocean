@@ -23,22 +23,25 @@ const en = {
     'homepage.activity': 'Activity',
 
     'services.bike': 'Bike',
-    'services.bikeText': 'Bike',
+    'services.bikeText': 'All kinds of Giant Bike, Bicycle, Electric Bicycle, additional discount for hostel guests.',
     'services.hostel': 'Hostel',
-    'services.hostelText': 'Hostel',
+    'services.hostelText': 'Check out and book the room on Airbnb:',
+    'services.airbnb.name': 'Fulong TaiwanNiu Airbnb',
     'services.activity': 'Activity',
-    'services.activityText': 'Activity',
+    'services.activityText': 'Surfboard Rental: 500NTD/day, Surfing Lesson: 1200NTD/2hrs, additional discount for hostel guests.',
 
-    'location.1': '',
-    'location.2': '',
-    'location.3': '',
-    'location.4': '',
-    'location.5': '',
-    'location.6': '',
-    'location.7': '',
-    'location.8': '',
-    'location.9': '',
-    'location.10': '',
+    'location.map.title': 'Map',
+    'location.navigation.title': 'Street Navigation',
+    'location.1': 'Taiwan Niu bike rental shop is the one with two traffic cone at the foward right of the intersection in front of the train station.',
+    'location.2': 'Take a right turn at the intersection and keep walking for around 60m to see the bridge.',
+    'location.3': 'Turn left at the intersection after the bridge.',
+    'location.4': 'Keep going a little bit after turned left.',
+    'location.5': 'There are stairs to going down at your right hand side.',
+    'location.6': 'Walk down the stairs, hostel is on second floor of the building in front of you.',
+    'location.7': 'Take a right when you reach the ground.',
+    'location.8': 'The front faucet and hose can rinse the sand.',
+    'location.9': 'The stairs to the hostel is at your left hand side, to second floor.',
+    'location.10': 'Welcome to the hostel.',
 
     'contact.title': 'Contact Form',
     'contact.subtitle': 'Send Us What You Want To Ask',
@@ -56,17 +59,17 @@ const en = {
     'contact.submitting': 'Submitting...',
 
     //Head Meta Data
-    'homepage.title': 'Fulong Taiwan Niu - Bike, Bicycle | Electric Bicycle | Hostel | Surfingboard Rental | Surfing Lesson | SUP | Beach',
-    'homepage.des': 'Fulong Taiwan Niu - All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
+    'homepage.title': 'Fulong Taiwan Niu - Giant Bike, Bicycle | Electric Bicycle | Hostel | Surfingboard Rental | Surfing Lesson | SUP | Beach',
+    'homepage.des': 'Fulong Taiwan Niu - All kinds of Giant Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
 
     'aboutpage.title': 'Fulong Taiwan Niu - About',
     'aboutpage.des': 'Fulong Taiwan Niu - Introduction',
 
     'servicespage.title': 'Fulong Taiwan Niu - Services',
-    'servicespage.des': 'All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
+    'servicespage.des': 'All kinds of Giant Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
     
     'locationpage.title': 'Fulong Taiwan Niu - Bike Rental Hostel Locations',
-    'locationpage.des': 'All kinds of Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
+    'locationpage.des': 'All kinds of Giant Bike, Bicycle, Electric Bicycle, Hostel, Surfboard Rental, Surfing Lesson, Canoe, Snorkeling, SUP',
 
     //Image Alt
     'image.coverphoto.taiwanniuStore': 'Fulong Taiwan Niu Store',

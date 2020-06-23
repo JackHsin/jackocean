@@ -48,6 +48,7 @@ const ServicesPage = ( { intl: { formatMessage } } ) => {
                 
                 <ContentContainer>
                     {formatMessage({ id: `services.hostelText` })}
+                    <a href="https://www.airbnb.com.tw/users/show/144766810" target="_blank">{formatMessage({ id: `services.airbnb.name` })}</a>
                 </ContentContainer>
             </SectionContainer>
 
