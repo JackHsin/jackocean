@@ -23,8 +23,8 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <meta name="google-site-verification" content="EePNiz9uww5d8uZsrGWGNNhNiwlwCemxIXkAozjQuyE" />
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"></link>
+          {/* <meta name="google-site-verification" content="EePNiz9uww5d8uZsrGWGNNhNiwlwCemxIXkAozjQuyE" />
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"></link> */}
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>

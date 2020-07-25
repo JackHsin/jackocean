@@ -22,6 +22,9 @@ export const HeaderOptionsList = ({setContactShow}) => {
                 <Link href={`/${pathLang}services`}><a><FormattedMessage id="menu.services"/></a></Link>
             </OptionLink>
             <OptionLink>
+                <Link href={`/${pathLang}blog`}><a><FormattedMessage id="menu.blog"/></a></Link>
+            </OptionLink>
+            <OptionLink>
                 <Link href={`/${pathLang}location`}><a><FormattedMessage id="menu.location"/></a></Link>
             </OptionLink> 
             <OptionLink to="#" onClick={() => setContactShow(true)}>

@@ -23,8 +23,13 @@ export const LogoContainer = styled.a`
     width: auto;
     padding: 0 0 0 25px;
     display: flex;
-
+    align-items: center;
     cursor: pointer;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
 
     @media screen and (max-width: 800px) {
         width: auto;

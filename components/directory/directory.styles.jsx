@@ -4,7 +4,7 @@ export const DirectoryMenuContainer = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     justify-content: space-between;
     padding: 0px 7.5px;

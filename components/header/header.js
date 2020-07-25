@@ -27,12 +27,12 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
     
             <Link href={`/${pathLang}`}>
                 <LogoContainer>
-                    <img src="/FulongTaiwanNiu.svg" alt="TaiwanNiu Logo" />
+                    <img src="/sea-waves-logo.png" alt="Logo" />
                 </LogoContainer>
             </Link>
 
             <OptionsContainer>
-                {/* Chinese/English Switch */}
+                {/* Chinese/English Switch
                 {
                     locale.includes('zh') ?
                         (
@@ -50,7 +50,7 @@ export const Header = ({ menuShow, toggleMenuShow }) => {
                                 </OptionLink>
                             </Link>
                         )
-                }
+                } */}
                 <DesktopMenuContainer>
                     <HeaderOptionsList setContactShow={setContactShow} />
                 </DesktopMenuContainer>

@@ -1,20 +1,30 @@
 // ./src/i18n/zh.js
 const zh_TW = {
     'app.learn': '學習 {name}',
+
+    'homepage.Ocean' : '海洋',
+    'homepage.Workout' : '健身',
+    'homepage.Technology' : '科技',
+    'homepage.Nutrition' : '營養',
+    'homepage.Surfing' : '衝浪',
+
+    'menu.home': '首頁',
+    'menu.about': '關於',
+    'menu.services': '服務',
+    'menu.blog': '文章',
+    'menu.contact': '聯絡',
+    'menu.location': '位置',
+    'menu.signin': '登入',
+    'menu.signout': '登出',
+
+    ///////////////////////////////////////
+
     'site.fullname': '福隆台灣牛',
 
     'about.title': '福隆台灣牛',
     'about.subtitle': '',
     'about.openinghours': '營業時間：早上7點到下午6點',
     'aboutpage.introduction': '台灣牛老闆是一位在台灣衝浪超過三十年且在台灣寥寥無幾的大浪浪人，自家經營單車租借、民宿、衝浪相關服務。物美價廉，服務周到。',
-
-    'menu.home': '首頁',
-    'menu.about': '關於',
-    'menu.services': '服務',
-    'menu.contact': '聯絡',
-    'menu.location': '位置',
-    'menu.signin': '登入',
-    'menu.signout': '登出',
 
     'homepage.bannerText': '福隆台灣牛 - 提供全方位福隆旅遊服務',
     'homepage.bike': '單車',

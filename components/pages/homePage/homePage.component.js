@@ -37,7 +37,7 @@ function HomePage( { intl: { formatMessage } } ) {
           </CoverBannerContainer> */}
 
           <ContentContainer>
-            <CoverPhotoContainer>
+            {/* <CoverPhotoContainer>
                 <Carousel>
                     <Carousel.Item>
                         <CoverPhoto
@@ -74,7 +74,7 @@ function HomePage( { intl: { formatMessage } } ) {
 
                 </Carousel>
 
-            </CoverPhotoContainer>
+            </CoverPhotoContainer> */}
 
             <Directory />
         </ContentContainer>

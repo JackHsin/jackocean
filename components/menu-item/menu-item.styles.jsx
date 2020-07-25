@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.a`
-    height: 30%;
+    // height: 30%;
     min-width: 30%;
     display: flex;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: center;
-    // border: 1px solid black;
+    border: 1px solid black;
     overflow: hidden;
-    // position: absolute;
+    margin: 0 7.5px 15px;
 
     &:hover {
         cursor: pointer;
@@ -29,9 +30,9 @@ export const MenuItemContainer = styled.a`
         width: 48%;
         margin: 5px 0;
 
-        &:first-child {
-            margin-right: 5px;
-        }
+        // &:first-child {
+            margin: 2.5px;
+        // }
     }
 `;
 MenuItemContainer.displayName = 'MenuItemContainer';
